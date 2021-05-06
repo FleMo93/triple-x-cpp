@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "type": "shell",
+        "label": "cl.exe build",
+        "command": "cl.exe",
+        "args": [
+            "/Zi",
+            "/EHsc",
+            "/Fe:",
+            "${workspaceFolder}\\bin\\TripleX.exe",
+            "${workspaceFolder}\\src\\TripleX.cpp"
+        ],
+        "problemMatcher": ["$msCompile"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
